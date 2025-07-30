@@ -1,4 +1,6 @@
-{% load static %}
+{% extends "layout01.html" %}
+
+{% comment %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +28,8 @@
         console.log("All Seven page loaded.");
     </script>
 </body>
-</html>
+</html> {% endcomment %}
+
+{% block title %}mywebseven | All Seven{% endblock %}
+{% block content %}<h1>mywebseven | All Seven</h1>{% endblock %}
+{% block footer %}&copy; 2025 mywebseven{% endblock %}
