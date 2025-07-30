@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mywebseven
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn mywebseven.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: mywebseven.settings
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: False
