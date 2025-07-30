@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all seven</title>
+    
+</head>
+<body>
+    <header>
+        <h1>All Seven</h1>
+    </header>
+    <main>
+        <section id="content">
+            {% block content %}
+            <!-- Content will be injected here -->
+            {% endblock %}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MyWebSeven. All rights reserved.</p>
+    </footer>
+    <script>
+        // Additional JavaScript can be added here
+        console.log("All Seven page loaded.");
+    </script>
+</body>
+</html>
